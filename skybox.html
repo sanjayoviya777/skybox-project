@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skybox</title>
+    <link rel="stylesheet" href="skybox.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>SKY BOX</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>rich dad poor dad</h2>
+            <h5>Author</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate, adipisci ea quae autem, harum sit nostrum tempore alias voluptatibus incidunt ab eos cum neque fugiat, amet optio. Tenetur, ea.</p>
+            <button onclick="deletebook(event)">delete</button>
+
+        </div>
+        
+        
+
+    </div>
+    <div class="popup-overlay" ></div>
+    <div class="popup-box">
+        <h2>Add book</h2>
+      
+        <form>
+            <input type="text" placeholder="book title" id="title-input">
+            <input type="text" placeholder="book author" id="author-input">
+            <textarea placeholder="short description" id="description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="delete-book"> CANCEL</button>
+
+        </form>
+        
+
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+
+
+    
+    
+    <script src="skybox.js"></script>
+</body>
+</html>
