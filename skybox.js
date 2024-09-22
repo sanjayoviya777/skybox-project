@@ -7,14 +7,14 @@ addpopupbutton.addEventListener("click",function(){
     popupbox.style.display="block"
 })
 
-var cancelbutton=document.getElementById("delete-book")
+var cancelbutton=document.getElementById("delete-lifestyle")
 cancelbutton.addEventListener("click",function(event){
     event.preventDefault()
     popupoverlay.style.display="none"
     popupbox.style.display="none"
 })
 var container=document.querySelector(".container")
-var addbook=document.getElementById("add-book")
+var addbook=document.getElementById("add-lifestyle")
 var titleinput=document.getElementById("title-input")
 var authorinput=document.getElementById("author-input")
 var descriptioninput=document.getElementById("description-input")
@@ -22,7 +22,7 @@ var descriptioninput=document.getElementById("description-input")
 addbook.addEventListener("click",function(event){
     event.preventDefault()
     var div=document.createElement("div")
-    div.setAttribute("class","book-container")
+    div.setAttribute("class","lifestyle-container")
     div.innerHTML=`<h2>${titleinput.value}</h2>   
     <h5>${authorinput.value}</h5>
     <p>${descriptioninput.value}</p>
